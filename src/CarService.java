@@ -52,7 +52,7 @@ public class CarService {
         System.out.println("Ny bil tilføjet!");
     }
 
-    // Opdater bilinformation
+
     public void updateCarInfo() {
         System.out.print("Indtast bilens ID for opdatering: ");
         int carID = scanner.nextInt();
@@ -67,7 +67,7 @@ public class CarService {
         System.out.println("Opdater bilinformation for: " + car.getBrand() + " " + car.getModel());
         System.out.print("Ny kilometerstand: ");
         int newOdometer = scanner.nextInt();
-        scanner.nextLine();  // For at spise newline
+        scanner.nextLine();
         car.setOdometer(newOdometer);
         carDAO.updateCar(car);
         System.out.println("Bilens kilometerstand er blevet opdateret.");

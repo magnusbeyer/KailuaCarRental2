@@ -5,7 +5,6 @@ public class CarDAO {
     private List<Car> cars = new ArrayList<>();
 
     public CarDAO() {
-        // Initial sample data (this can be replaced with a real database connection)
         cars.add(new Car(1, "Toyota", "Corolla", "Petrol", "ABC123", "2018-05", 50000, "Family"));
         cars.add(new Car(2, "BMW", "X5", "Diesel", "XYZ456", "2019-07", 30000, "Luxury"));
     }

@@ -7,7 +7,6 @@ public class Rental {
     private int startKm;
     private String registrationNumber;  // Car's registration number
 
-    // Constructor
     public Rental(int rentalID, int customerID, String fromDate, String toDate, int maxKm, int startKm, String registrationNumber) {
         this.rentalID = rentalID;
         this.customerID = customerID;
@@ -18,7 +17,6 @@ public class Rental {
         this.registrationNumber = registrationNumber;
     }
 
-    // Getters and setters
     public int getRentalID() {
         return rentalID;
     }

@@ -8,9 +8,8 @@ public class Customer {
     private String phone;
     private String email;
     private String driverLicenceNumber;
-    private String driverSinceDate;  // Driver since date (First driving license date)
+    private String driverSinceDate;
 
-    // Constructor
     public Customer(int customerID, String name, String address, String zip, String city,
                     String mobilePhone, String phone, String email, String driverLicenceNumber,
                     String driverSinceDate) {
@@ -26,7 +25,7 @@ public class Customer {
         this.driverSinceDate = driverSinceDate;  // Initialize driverSinceDate
     }
 
-    // Getters and setters
+
     public int getCustomerID() {
         return customerID;
     }
@@ -100,11 +99,11 @@ public class Customer {
     }
 
     public String getDriverSinceDate() {
-        return driverSinceDate;  // Getter for driverSinceDate
+        return driverSinceDate;
     }
 
     public void setDriverSinceDate(String driverSinceDate) {
-        this.driverSinceDate = driverSinceDate;  // Setter for driverSinceDate
+        this.driverSinceDate = driverSinceDate;
     }
 
     @Override

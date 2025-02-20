@@ -8,7 +8,6 @@ public class Car {
     private int odometer;
     private String category;
 
-    // Constructor
     public Car(int carID, String brand, String model, String fuelType, String registrationNumber,
                String firstRegistration, int odometer, String category) {
         this.carID = carID;
@@ -21,7 +20,6 @@ public class Car {
         this.category = category;
     }
 
-    // Getters and setters
     public int getCarID() {
         return carID;
     }

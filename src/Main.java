@@ -21,7 +21,7 @@ public class Main {
             System.out.println("8. Afslut");
 
             int choice = scanner.nextInt();
-            scanner.nextLine();  // For at spise newline karakteren
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
