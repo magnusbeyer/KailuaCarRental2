@@ -23,7 +23,7 @@ public class RentalDAO {
         return null;
     }
 
-    // Get all rentals
+
     public List<Rental> getAllRentals() {
         return rentals;
     }

@@ -42,7 +42,7 @@ public class CarService {
         String firstRegistration = scanner.nextLine();
         System.out.print("Kilometerstand: ");
         int odometer = scanner.nextInt();
-        scanner.nextLine();  // For at spise newline
+        scanner.nextLine();
         System.out.print("Kategori (Luxury/Family/Sport): ");
         String category = scanner.nextLine();
 
@@ -56,7 +56,7 @@ public class CarService {
     public void updateCarInfo() {
         System.out.print("Indtast bilens ID for opdatering: ");
         int carID = scanner.nextInt();
-        scanner.nextLine();  // For at spise newline
+        scanner.nextLine();
         Car car = carDAO.getCarByID(carID);
 
         if (car == null) {

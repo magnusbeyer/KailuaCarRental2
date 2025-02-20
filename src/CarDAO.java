@@ -5,8 +5,6 @@ public class CarDAO {
     private List<Car> cars = new ArrayList<>();
 
     public CarDAO() {
-        cars.add(new Car(1, "Toyota", "Corolla", "Petrol", "ABC123", "2018-05", 50000, "Family"));
-        cars.add(new Car(2, "BMW", "X5", "Diesel", "XYZ456", "2019-07", 30000, "Luxury"));
     }
 
     public List<Car> getAllCars() {

@@ -1,11 +1,11 @@
 public class Rental {
     private int rentalID;
-    private int customerID;  // Reference to Customer
+    private int customerID;
     private String fromDate;
     private String toDate;
     private int maxKm;
     private int startKm;
-    private String registrationNumber;  // Car's registration number
+    private String registrationNumber;
 
     public Rental(int rentalID, int customerID, String fromDate, String toDate, int maxKm, int startKm, String registrationNumber) {
         this.rentalID = rentalID;
