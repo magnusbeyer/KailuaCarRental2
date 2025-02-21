@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            // Menu for brugerinteraktion
+
             System.out.println("\n*************** Kailua CarRental System ***************");
             System.out.println("Vælg en handling:");
             System.out.println("1. Vis alle biler");

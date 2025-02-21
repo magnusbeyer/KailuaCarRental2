@@ -5,7 +5,7 @@ public class CarService {
     private CarDAO carDAO = new CarDAO();
     private Scanner scanner = new Scanner(System.in);
 
-    // Vis alle biler
+
     public void showAllCars() {
         List<Car> cars = carDAO.getAllCars();
         System.out.println("************** BILER I UDBUD **************");
@@ -27,7 +27,6 @@ public class CarService {
         }
     }
 
-    // Tilføj ny bil
     public void addNewCar() {
         System.out.println("Indtast bilinformation:");
         System.out.print("Mærke: ");

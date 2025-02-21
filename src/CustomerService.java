@@ -5,7 +5,6 @@ public class CustomerService {
     private CustomerDAO customerDAO = new CustomerDAO();
     private Scanner scanner = new Scanner(System.in);
 
-    // Vis alle kunder
     public void showAllCustomers() {
         List<Customer> customers = customerDAO.getAllCustomers();
         System.out.println("************** KUNDER **************");
@@ -27,7 +26,7 @@ public class CustomerService {
         }
     }
 
-    // Tilføj ny kunde
+
     public void addNewCustomer() {
         System.out.println("Indtast kundens information:");
         System.out.print("Navn: ");
@@ -49,17 +48,15 @@ public class CustomerService {
         System.out.print("Første kørekortdato (ÅÅÅÅ-MM-DD): ");
         String driverSince = scanner.nextLine();
 
-        // Opret kunde og gem i databasen
         Customer newCustomer = new Customer(0, name, address, zip, city, mobilePhone, phone, email, driverLicenceNumber, driverSince);
         customerDAO.addCustomer(newCustomer);
         System.out.println("Ny kunde tilføjet!");
     }
 
-    // Opdater kundens information
     public void updateCustomerInfo() {
         System.out.print("Indtast kundens ID for opdatering: ");
         int customerID = scanner.nextInt();
-        scanner.nextLine();  // For at spise newline
+        scanner.nextLine();
         Customer customer = customerDAO.getCustomerByID(customerID);
 
         if (customer == null) {
